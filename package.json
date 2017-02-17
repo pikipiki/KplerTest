@@ -1,0 +1,16 @@
+{
+  "name": "kpler",
+  "version": "1.0.0",
+  "description": "kpler",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pikipiki",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-ui-router": "^1.0.0-beta.3",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}

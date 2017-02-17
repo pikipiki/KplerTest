@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div class="row">  
+
+      <div class="col-xs-12">
+        <input type="text" class="form-control" placeholder="Search" ng-model="$ctrl.searchTextResults">
+        <button ng-click="$ctrl.orderByName()">Alphabetical order</button>
+        <button ng-click="$ctrl.orderByPopulation()">Population order</button>
+      </div>
+
+      <div class="col-xs-6">      
+        <ul ng-repeat="object in $ctrl.data | filter:$ctrl.searchTextResults | orderBy: $ctrl.sort : $ctrl.reverse">
+            {{object.name}}, {{object.capital}}, {{object.population}} ,{{object.borders}}
+            <button>Zoom</button>            
+        </ul>
+      </div>
+
+      <div class="col-xs-6">
+      </div>
+
+    </div>
+
+</div>
