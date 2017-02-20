@@ -1,9 +1,10 @@
-var CountryListController = function(DataService) {
+var CountryListController = function(DataService, $filter) {
 
   DataService.getData()
     .then(
       (res) => {
         this.data = res.data
+        this.totalSum = $filter('sumFilter')(this.item)
       }     
     )
     .catch(DataService.fail)
@@ -17,9 +18,8 @@ var CountryListController = function(DataService) {
     this.sort = "population"
     this.reverse = true
   }
-
 }
 
 angular
   .module('components.countryList')
-  .controller('CountryListController', ['DataService', CountryListController])
+  .controller('CountryListController', ['DataService', '$filter', CountryListController])
