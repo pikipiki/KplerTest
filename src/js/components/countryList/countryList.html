@@ -1,30 +1,11 @@
-<div class="container">
-
-    <div class="row">  
-
-      <div class="col-xs-12">
-        <input type="text" class="form-control" placeholder="Search" ng-model="$ctrl.searchTextResults">
-        <button ng-click="$ctrl.orderByName()">Alphabetical order</button>
-        <button ng-click="$ctrl.orderByPopulation()">Population order</button>
-      </div>
-
-      <div class="col-xs-6">     
-        <ul ng-repeat="
-        object in $ctrl.filteredCountry = ($ctrl.data 
-        |filter:$ctrl.searchTextResults 
-        |orderBy:$ctrl.sort: $ctrl.reverse) 
-        track by object.name">
-          <country-card country="object"></country-card>          
-        </ul>
-         <ul ng-if="$ctrl.filteredCountry.length">
-          Average Population: 
-            {{ $ctrl.filteredCountry | sumFilter | number:0}}
-         </ul>        
-      </div>
-
-      <div class="col-xs-6">
-      </div>
-
-    </div>
-
-</div>
+<ul ng-repeat="
+object in $ctrl.filteredCountry = ($ctrl.data 
+|filter:$ctrl.searchBarValue
+|orderBy:$ctrl.sortByName: $ctrl.orderReverse) 
+track by object.name">
+  <country-card country="object"></country-card>          
+</ul>
+<ul ng-if="$ctrl.filteredCountry.length">
+  Average Population: 
+  {{ $ctrl.filteredCountry | sumFilter | number:0}}
+</ul>        

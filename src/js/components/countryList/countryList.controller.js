@@ -1,5 +1,4 @@
 var CountryListController = function(DataService, $filter) {
-
   DataService.getData()
     .then(
       (res) => {
@@ -8,16 +7,6 @@ var CountryListController = function(DataService, $filter) {
       }     
     )
     .catch(DataService.fail)
-
-  this.orderByName = () => {
-    this.sort = "name"
-    this.reverse = false
-  }
-
-  this.orderByPopulation = () => {
-    this.sort = "population"
-    this.reverse = true
-  }
 }
 
 angular
