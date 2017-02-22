@@ -1,5 +1,5 @@
 var app = {
-  templateUrl: 'src/js/app.html'
+  templateUrl: 'src/app/app.html'
 }
 
 angular

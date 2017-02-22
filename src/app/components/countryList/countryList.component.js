@@ -1,6 +1,6 @@
 var countryList = {
   controller: 'CountryListController',
-  templateUrl: 'src/js/components/countryList/countryList.html',
+  templateUrl: 'src/app/components/countryList/countryList.html',
   bindings: {
     searchBarValue:"@",
     sortByName:"<",

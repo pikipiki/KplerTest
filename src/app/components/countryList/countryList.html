@@ -3,9 +3,11 @@ object in $ctrl.filteredCountry = ($ctrl.data
 |filter:$ctrl.searchBarValue
 |orderBy:$ctrl.sortByName: $ctrl.orderReverse) 
 track by object.name">
-  <country-card country="object"></country-card>          
+  <country-card 
+    country="object">
+  </country-card>          
 </ul>
 <ul ng-if="$ctrl.filteredCountry.length">
   Average Population: 
   {{ $ctrl.filteredCountry | sumFilter | number:0}}
-</ul>        
+</ul>      

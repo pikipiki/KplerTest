@@ -1,6 +1,6 @@
 var searchBar = {
   controller: 'SearchBarController',
-  templateUrl : 'src/js/components/searchBar/searchBar.html',
+  templateUrl : 'src/app/components/searchBar/searchBar.html',
   bindings: {
     searchBarValue:"@",
     searchBarChange:"&",

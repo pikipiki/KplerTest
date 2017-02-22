@@ -1,10 +1,13 @@
-function sumFilter() {
+function sumFilter(DataService) {
   return function(data){
     if (typeof data != "undefined"){
       let populationSum = 0
-      for (country of data){
+      DataService.clearList()
+      for (let country of data){
         populationSum += country.population
+        DataService.addList(country)
       }
+      DataService.getList()
       return populationSum/data.length
     }
   }
@@ -12,4 +15,4 @@ function sumFilter() {
 
 angular
   .module('components.countryList')
-  .filter('sumFilter', sumFilter)
+  .filter('sumFilter',['DataService', sumFilter])

@@ -1,7 +1,8 @@
 var countryCard = {
-  templateUrl : 'src/js/components/countryCard/countryCard.html',
+  controller: 'CountryCardController',
+  templateUrl : 'src/app/components/countryCard/countryCard.html',
   bindings: {
-    country: '<'
+    country: "<"
   }
 }
 

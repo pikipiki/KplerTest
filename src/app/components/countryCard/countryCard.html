@@ -1,0 +1,9 @@
+{{$ctrl.country.name}}, 
+{{$ctrl.country.capital}}, 
+{{$ctrl.country.population}}, 
+{{$ctrl.country.borders}}
+<button 
+  class="btn btn-default"
+  ng-click="$ctrl.saveCountryToService($ctrl.country.latlng)">
+  Zoom
+</button>

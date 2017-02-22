@@ -4,11 +4,13 @@
   placeholder="Search" 
   ng-model="$ctrl.searchBarValue" 
   ng-change="$ctrl.searchBarChange({value:$ctrl.searchBarValue})">
-<button 
-  ng-click="$ctrl.orderByNameChange({name:'name',reverse:false})">
+<button
+  class="btn btn-default" 
+  ng-click="$ctrl.orderByNameChange({name:'name', reverse:false})">
   Alphabetical order
 </button>
-<button 
-  ng-click="$ctrl.orderByPopulationChange({name:'population',reverse:true})">
+<button
+  class="btn btn-default" 
+  ng-click="$ctrl.orderByPopulationChange({name:'population', reverse:true})">
   Population order
 </button>

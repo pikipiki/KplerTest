@@ -3,5 +3,6 @@ angular
     'components.container',
     'components.searchBar',
     'components.countryList',
-    'components.countryCard'
+    'components.countryCard',
+    'components.googleMapMarker',
   ])

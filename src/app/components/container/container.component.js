@@ -1,6 +1,6 @@
 var container = {
   controller: 'ContainerController',
-  templateUrl: 'src/js/components/container/container.html',
+  templateUrl: 'src/app/components/container/container.html',
 }
 
 angular
