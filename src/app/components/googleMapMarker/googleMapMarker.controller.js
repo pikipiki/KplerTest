@@ -8,7 +8,6 @@ var GoogleMapMarkerController = function(NgMap, DataService) {
     "zoomValue":2
     }
   }
-
   NgMap.getMap()
   DataService.getData()
     .then(

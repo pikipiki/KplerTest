@@ -1,5 +1,5 @@
-var CountryCardController = function(DataService) {}
+var CountryCardController = function() {}
 
 angular
   .module('components.countryCard')
-  .controller('CountryCardController', ['DataService', CountryCardController])
+  .controller('CountryCardController', CountryCardController)
