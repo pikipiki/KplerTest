@@ -1,4 +1,6 @@
-<ng-map zoom="2" center="[40.74, -74.18]">
+<ng-map 
+  zoom="{{$ctrl.countryLatlag.zoomValue}}" 
+  center="{{$ctrl.countryLatlag.countryLatlag.latlng}}">
   <marker 
     ng-repeat="country in $ctrl.country" 
     position="{{country.latlng}}">

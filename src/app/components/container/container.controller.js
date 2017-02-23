@@ -8,6 +8,12 @@ var ContainerController = function() {
       reverse: reverse
     }
   }
+  this.changeParentCountryLatlagAndZoomValue = (latlng) => {
+    this.countryLatlagAndZoomValue = {
+      countryLatlag: latlng,
+      zoomValue: 8
+    }
+  }
 }
 
 angular

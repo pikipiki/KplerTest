@@ -1,4 +1,14 @@
 var GoogleMapMarkerController = function(NgMap, DataService) {
+  this.$onInit = () => {
+    this.countryLatlag = {
+    "countryLatlag":
+      {
+        "latlng":[40.74,-74.18]
+      },
+    "zoomValue":2
+    }
+  }
+
   NgMap.getMap()
   DataService.getData()
     .then(

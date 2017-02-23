@@ -12,12 +12,6 @@ var DataService = function($http) {
   this.clearList = () => {
     this.list = []
   }
-  this.addItem = (value) => {
-    this.item = value
-  }
-  this.getItem = () => {
-    return this.item
-  }
 }
 
 angular

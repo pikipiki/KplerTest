@@ -4,6 +4,6 @@
 {{$ctrl.country.borders}}
 <button 
   class="btn btn-default"
-  ng-click="$ctrl.saveCountryToService($ctrl.country.latlng)">
+  ng-click="$ctrl.grandparent.changeParentCountryLatlagAndZoomValue({latlng:$ctrl.country.latlng})">
   Zoom
 </button>

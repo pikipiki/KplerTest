@@ -1,9 +1,4 @@
-var CountryCardController = function(DataService) {
-  this.saveCountryToService = (country) => {
-    DataService.addItem(country)
-    console.log(DataService.getItem())
-  }
-}
+var CountryCardController = function(DataService) {}
 
 angular
   .module('components.countryCard')

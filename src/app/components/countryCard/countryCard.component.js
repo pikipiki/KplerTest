@@ -3,6 +3,9 @@ var countryCard = {
   templateUrl : 'src/app/components/countryCard/countryCard.html',
   bindings: {
     country: "<"
+  },
+  require:{
+    grandparent: '^^container'
   }
 }
 
