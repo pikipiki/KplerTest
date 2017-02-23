@@ -2,7 +2,6 @@ var DataService = function($http) {
   this.getData = () => $http.get('https://restcountries-v1.p.mashape.com/all')
   this.fail = (err) => console.log(err.statusText)
   this.list = []
-  this.item = null
   this.addList = (value) => {
     this.list.push(value)
   }

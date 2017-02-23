@@ -2,7 +2,8 @@ var googleMapMarker = {
   controller: 'GoogleMapMarkerController',
   templateUrl: 'src/app/components/googleMapMarker/googleMapMarker.html',
   bindings: {
-    countryLatlag:"<"
+    countryLatlag:"<",
+    filteredCountry:"<"
   }
 }
 

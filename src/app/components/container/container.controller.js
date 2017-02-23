@@ -1,6 +1,7 @@
-var ContainerController = function() {
+var ContainerController = function(DataService) {
   this.changeParentSearchValue = (value) => {
     this.search = value
+    this.filteredcountry = DataService.getList()
   }
   this.changeParentSortBy = (name, reverse) => {
     this.sort = {
@@ -18,4 +19,4 @@ var ContainerController = function() {
 
 angular
   .module('components.container')
-  .controller('ContainerController', ContainerController)
+  .controller('ContainerController', ['DataService', ContainerController])

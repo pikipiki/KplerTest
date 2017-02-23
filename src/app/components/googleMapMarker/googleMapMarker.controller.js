@@ -12,7 +12,7 @@ var GoogleMapMarkerController = function(NgMap, DataService) {
   DataService.getData()
     .then(
       (res) => {
-        this.country = DataService.getList()
+        this.filteredCountry = res.data
       }     
     )
     .catch(DataService.fail) 
