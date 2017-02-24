@@ -7,7 +7,6 @@ function sumFilter(DataService) {
         populationSum += country.population
         DataService.addList(country)
       }
-      DataService.getList()
       return populationSum/data.length
     }
   }

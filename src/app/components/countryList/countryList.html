@@ -1,6 +1,6 @@
 <ul ng-repeat="
 object in $ctrl.filteredCountry = ($ctrl.data 
-|filter:$ctrl.searchBarValue
+|filter:{name:$ctrl.searchBarValue}
 |orderBy:$ctrl.sortByName: $ctrl.orderReverse) 
 track by object.name">
   <country-card 
