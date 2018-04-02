@@ -1,6 +1,5 @@
-#Kpler
+# Kpler
 
-- Install packages     : "npm install"
-- To compile           : "gulp scripts"
-- To launch the server : "python -m SimpleHTTPServer 8080"
-- Browser              : "http://localhost:8080"
+- Install packages : npm run yarn
+- Run server : npm start
+- Build : npm run build
