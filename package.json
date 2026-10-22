@@ -6,34 +6,35 @@
   "scripts": {
     "yarn": "npm install yarn ; yarn install",
     "start": "webpack-dev-server -d --progress --colors --inline --hot --https --open --content-base bin/",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "node tests/smoke.cjs"
   },
   "license": "MIT",
   "repository": "https://github.com/pikipiki/KplerTest",
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.15",
+    "@uirouter/angularjs": "^1.1.2",
     "angular": "^1.5.8",
-    "clean-webpack-plugin": "^0.1.10",
+    "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^3.0.1",
     "extract-text-webpack-plugin": "^1.0.1",
-    "ng-annotate-webpack-plugin": "^0.1.3",
-    "ngmap": "^1.18.4",
-    "webpack": "^1.13.2",
-    "yarn": "^1.5.1"
+    "ng-annotate-webpack-plugin": "^0.3.0",
+    "ngmap": "^1.18.5",
+    "webpack": "^1.15.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
-    "babel-core": "^6.11.4",
-    "babel-loader": "^6.2.5",
-    "babel-preset-env": "^1.6.1",
-    "css-loader": "^0.25.0",
-    "file-loader": "^0.9.0",
-    "html-loader": "^0.4.3",
-    "ng-annotate-loader": "^0.1.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.5",
+    "ng-annotate-loader": "^0.7.0",
     "ngtemplate-loader": "^1.3.1",
-    "node-sass": "^3.9.0",
-    "sass-loader": "^4.0.1",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.2",
+    "node-sass": "^3.13.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^1.15.0",
     "webpack-dev-server": "^1.16.5"
   }
 }
